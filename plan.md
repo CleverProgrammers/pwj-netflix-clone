@@ -1,5 +1,13 @@
+
+
+
+
+
+
+
+
 - Create HTML Structure -> DONE
-- Create header
+- Create header -> DONE
 - Style header
 - Create featured section
 - Create Netflix Originals

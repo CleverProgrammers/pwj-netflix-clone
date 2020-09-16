@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.original__movies {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+img {
+    width: 100px;
+}
+
+.featured { 
+    height: 400px;
+    position: relative;
+    background-image: url('https://image.tmdb.org/t/p/original//3lBDg3i6nn5R2NKFCJ6oKyUo2j5.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured h2 {
+    font-size: 50px;
+    margin: 0;
+    z-index: 10;
+}
+
+.featured .featured__buttons {
+    z-index: 10;
+}
+
+.featured .featured__buttons button {
+    font-size: 16px;
+    color: white;
+    background-color: rgba(109,109,110,0.7);;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+
+.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.featured .featured__buttons .button__play {
+    background-color: white; 
+    color: black;
+}
+
+.button__play i {
+    margin-right: 6px;
+}
+
+.featured .featured__description {
+    max-width: 350px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+    z-index: 10;
+}
