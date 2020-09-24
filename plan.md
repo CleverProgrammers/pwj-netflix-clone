@@ -1,4 +1,7 @@
-
+- Create a Header
+- Finish up the movies section
+- Understand Promises, APIs, Fetch..
+- Pull in movies from API
 
 
 

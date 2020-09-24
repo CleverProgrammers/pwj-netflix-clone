@@ -4,10 +4,10 @@ body {
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-.original__movies {
+/* .original__movies {
     overflow-x: scroll;
     white-space: nowrap;
-}
+} */
 
 img {
     width: 100px;
@@ -23,6 +23,16 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.featured::after {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    height: 7.4rem;
+    background-color: green;
 }
 
 .featured h2 {
