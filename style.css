@@ -17,8 +17,9 @@ body {
 }
 
 .movies__container img  {
-    margin-right: 10px;
+    margin-right: 5px;
     width: 200px;
+    
 }
 
 header {
@@ -37,6 +38,7 @@ header {
 
 .logo > img {
     width: 120px;
+    margin: 20px;
 }
 
 .profile > img {
@@ -71,6 +73,7 @@ img {
 
 .netflixOriginals h2, .movies__header h2 {
     padding-left: 30px;
+    margin-left: 20px;
 }
 
 
@@ -106,10 +109,12 @@ img {
 .featured .featured__buttons .button__play {
     background-color: white; 
     color: black;
+    margin: 5px;
 }
 
 .button__play i {
     margin-right: 6px;
+    
 }
 
 .featured .featured__description {
@@ -117,4 +122,14 @@ img {
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0,0,0,.45);
     z-index: 10;
+    margin: 10px;
 }
+.profile{
+    display: flex;
+    /* flex: 1; */
+    text-shadow: 5px 10px 20px  rgba(0,0,0,1);
+    border-radius: 99px;
+    
+    margin:15px
+}
+
