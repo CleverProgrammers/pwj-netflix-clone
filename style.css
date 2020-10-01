@@ -6,14 +6,34 @@ body {
 
 }
 
+.original__movies {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .original__movies, .movies__container {
-    padding-left: 50px
+    padding-left: 50px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.original__movies::-webkit-scrollbar {
+    display: none;
 }
 
 .original__movies img {
     margin-right: 10px;
     height: 250px;
     width: auto;
+}
+
+.original__movies img, .movies__container img {
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.original__movies img:hover, .movies__container img:hover {
+    transform: scale(1.1);
 }
 
 .movies__container img  {

@@ -1,3 +1,12 @@
+October 1
+
+- Horizontal scroll for movies DONE
+- Retreive the other movies from the API DONE
+- Add the hover effect to individual movies 
+- PARTY in the house
+
+
+
 - Create a Header
 - Finish up the movies section
 - Understand Promises, APIs, Fetch..
