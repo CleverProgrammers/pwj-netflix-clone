@@ -1,3 +1,14 @@
+October 22
+
+- Show the trailer for the user when they select a movie
+- Find a way to grab the movie (YouTube, Movie Database API, IMDB)
+- If we can't find the trailer, we need to Tell The user "Can't find trailer"
+- Open a modal on click of a movie
+- Disable user interation
+- Show the movie in the modal (LOAD youtube video)
+- Show background black
+
+
 October 1
 
 - Horizontal scroll for movies DONE
