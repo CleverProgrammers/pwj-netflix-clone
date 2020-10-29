@@ -1,3 +1,16 @@
+NEXT UP
+- Login Logout
+- PLaylists
+
+October 29
+
+- Fix the issue with the iframe
+- Add genres to netflix clone
+
+--- Grab all genre titles and loop though them
+--- Use the same API as we used before
+--- Grab the movies for each genre
+
 October 22
 
 - Show the trailer for the user when they select a movie
