@@ -1,4 +1,4 @@
-
+var firstName = "Nazariy";
 
 // Called whe the page is loaded
 window.onload = () =>  {
@@ -6,6 +6,35 @@ window.onload = () =>  {
     getTrendingNow();
     getTopRated();
     getGenres();
+    letVarExample();
+    // console.log(firstName)
+}
+
+function letVarExample(firstName = "Nazariy"){
+    // Melissas Address 
+    const address = {
+        street: "9879 Test rd.",
+        city: "Brooklyn",
+        state: "NY"
+    }
+
+    // address.state = "MI";
+
+    // let state = address.state;
+    // state = "MI"
+    // console.log(address);
+
+    // let address2 = address;
+    // address2.state = "MI";
+
+    // let address2 = {
+    //     ...address,
+    //     apartment: "MI"
+    // }
+
+    // let { street, city, state } = address;
+
+    // console.log(street + city + state);
 }
 
 async function getMovieTrailer(id) {
@@ -55,11 +84,12 @@ const handleMovieSelection = (e) => {
     // we need to call the api with the ID 
 }
 
-function showMovies(movies, element_selector, path_type ){
+showMovies = (movies, element_selector, path_type ) => {
     var moviesEl = document.querySelector(element_selector);
     for(var movie of movies.results){
         var imageElement = document.createElement('img');
         imageElement.setAttribute('data-id', movie.id);
+
         imageElement.src = `https://image.tmdb.org/t/p/original${movie[path_type]}`;
         
         imageElement.addEventListener('click', (e)=>{
@@ -117,7 +147,7 @@ function showMoviesBasedOnGenre(genreName, movies){
     let allMovies = document.querySelector('.movies');
     let genreEl = document.createElement('div');
     genreEl.classList.add('movies__header');
-    genreEl.innerHTML = `
+    genreEl.innerHTML =`
         <h2>${genreName}</h2>
     `
     let moviesEl = document.createElement('div');
@@ -125,9 +155,14 @@ function showMoviesBasedOnGenre(genreName, movies){
     moviesEl.setAttribute('id', genreName);
 
     for(var movie of movies.results){
+
         var imageElement = document.createElement('img');
-        imageElement.setAttribute('data-id', movie.id);
-        imageElement.src = `https://image.tmdb.org/t/p/original${movie["backdrop_path"]}`;
+        let { backdrop_path, id } = movie;
+        console.log("TESTING DESCONSTRUCT:", id, backdrop_path);
+        imageElement.setAttribute('data-id', id );
+
+
+        imageElement.src = `https://image.tmdb.org/t/p/original${ backdrop_path}`;
         
         imageElement.addEventListener('click', (e)=>{
             handleMovieSelection(e); 

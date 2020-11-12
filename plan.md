@@ -1,6 +1,4 @@
-NEXT UP
-- Login Logout
-- PLaylists
+CREATE LOGIN FO NETFLIX CLONE
 
 October 29
 
