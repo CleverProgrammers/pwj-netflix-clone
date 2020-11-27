@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer {
+    background-color: rgba(0,0,0,.75);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 68px;
+    padding-right: 68px;
+    border-radius: 4px;
+    width: 450px;
+}
+
+.background-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.background-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logingContainer-main button {
+    background-color: #e50914;
+}

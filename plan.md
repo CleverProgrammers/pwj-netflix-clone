@@ -1,3 +1,12 @@
+Nov 26, 2020
+
+- Create a Login Form 
+- Grab the data
+- Hash a password
+- Keep the user logged in 
+
+
+
 CREATE LOGIN FO NETFLIX CLONE
 
 October 29
