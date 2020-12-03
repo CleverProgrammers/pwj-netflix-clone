@@ -1,7 +1,6 @@
 let loginForm = document.getElementById("loginForm");
 let apiUrl = "http://localhost:3000";
 
-
 loginForm.addEventListener("submit", (e)=>{
     e.preventDefault();
     console.log(loginForm);
@@ -24,6 +23,7 @@ loginForm.addEventListener("submit", (e)=>{
         }
     }) // returns a promise already
     .then((response)=>{
-        console.log("response");
+        localStorage.setItem('token', response.token)
+        location.href = "/";
     })
 })

@@ -6,9 +6,30 @@ body {
 
 }
 
+.dropdown {
+    background-color: black;
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100px;
+    opacity: 0;
+    margin-top: 3px;
+    
+}
+
+.dropdown span {
+    cursor: pointer;
+}
+
 .original__movies {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.profile:hover .dropdown {
+    opacity: 1;
 }
 
 .original__movies, .movies__container {
@@ -57,6 +78,10 @@ header {
 
 .logo > img {
     width: 120px;
+}
+
+.profile {
+    position: relative;
 }
 
 .profile > img {

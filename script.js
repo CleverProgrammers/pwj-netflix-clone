@@ -10,6 +10,9 @@ window.onload = () =>  {
     // console.log(firstName)
 }
 
+
+
+
 function letVarExample(firstName = "Nazariy"){
     // Melissas Address 
     const address = {

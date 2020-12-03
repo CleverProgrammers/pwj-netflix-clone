@@ -1,3 +1,8 @@
+Dec 3, 2020
+- Keep the user logged in
+- Create a Register Page
+- Complete the API for Registration
+
 Nov 26, 2020
 
 - Create a Login Form 
