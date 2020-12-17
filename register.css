@@ -6,10 +6,6 @@ body {
     align-items: center;
 }
 
-.registered-alert {
-    display: none;
-}
-
 .loginContainer {
     background-color: rgba(0,0,0,.75);
     padding-top: 60px;
@@ -18,10 +14,6 @@ body {
     padding-right: 68px;
     border-radius: 4px;
     width: 450px;
-}
-
-.loginContainer a {
-    color: white;
 }
 
 .background-wrapper {

@@ -1,6 +1,17 @@
 let loginForm = document.getElementById("loginForm");
 let apiUrl = "http://localhost:3000";
 
+const queryString = location.search;
+const urlParams = new URLSearchParams(queryString);
+const existingEmail = urlParams.get('existingEmail');
+const registered = urlParams.get('registered')
+if(existingEmail){
+    loginForm.email.value = existingEmail
+}
+if(registered){
+    document.querySelector('.registered-alert').style.display = "block";
+}
+
 loginForm.addEventListener("submit", (e)=>{
     e.preventDefault();
     console.log(loginForm);
