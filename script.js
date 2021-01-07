@@ -7,11 +7,32 @@ window.onload = () =>  {
     getTopRated();
     getGenres();
     letVarExample();
+    getWishList();
     // console.log(firstName)
 }
 
 
-
+function getWishList(){
+    fetch("http://localhost:3000/wishlist", {
+        headers: {
+            Authorization: `${localStorage.getItem('token')}`
+        }
+    })
+    .then((response)=>{
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error("something went wrong");
+        }
+    })
+    .then((data)=>{
+        console.log(data)
+    })
+    .catch((error_data)=>{
+        logOut();
+        console.log(error_data);
+    })
+}
 
 function letVarExample(firstName = "Nazariy"){
     // Melissas Address 
