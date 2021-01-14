@@ -5,12 +5,10 @@ window.onload = () =>  {
     getOriginals();
     getTrendingNow();
     getTopRated();
+    getWishList();
     getGenres();
     letVarExample();
-    getWishList();
-    // console.log(firstName)
 }
-
 
 function getWishList(){
     fetch("http://localhost:3000/wishlist", {
@@ -26,7 +24,7 @@ function getWishList(){
         }
     })
     .then((data)=>{
-        console.log(data)
+        showMovies(data, "#wishlist", "backdrop_path")
     })
     .catch((error_data)=>{
         logOut();
