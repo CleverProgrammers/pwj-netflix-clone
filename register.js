@@ -1,5 +1,5 @@
 let registerForm = document.getElementById("registerForm");
-let apiUrl = "http://localhost:3000";
+let apiUrl = process.env.API_URL || "http://localhost:3000";
 
 registerForm.addEventListener("submit", (e)=>{
     e.preventDefault();

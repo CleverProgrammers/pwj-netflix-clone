@@ -1,4 +1,5 @@
 var firstName = "Nazariy";
+let apiUrl = process.env.API_URL || "http://localhost:3000";
 
 // Called whe the page is loaded
 window.onload = () =>  {
@@ -11,7 +12,7 @@ window.onload = () =>  {
 }
 
 function getWishList(){
-    fetch("http://localhost:3000/wishlist", {
+    fetch(`${apiUrl}/wishlist`, {
         headers: {
             Authorization: `${localStorage.getItem('token')}`
         }
