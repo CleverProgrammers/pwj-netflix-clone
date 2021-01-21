@@ -1,5 +1,8 @@
 var firstName = "Nazariy";
-let apiUrl = process.env.API_URL || "http://localhost:3000";
+let apiUrl =  "http://localhost:3000";
+if(location.href.indexOf("netlify") != -1){
+    apiUrl = "https://netflix-cp.herokuapp.com";
+}
 
 // Called whe the page is loaded
 window.onload = () =>  {

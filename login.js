@@ -1,5 +1,8 @@
 let loginForm = document.getElementById("loginForm");
-let apiUrl = process.env.API_URL || "http://localhost:3000";
+let apiUrl =  "http://localhost:3000";
+if(location.href.indexOf("netlify") >= 0 ){
+    apiUrl = "https://netflix-cp.herokuapp.com";
+}
 
 const queryString = location.search;
 const urlParams = new URLSearchParams(queryString);
